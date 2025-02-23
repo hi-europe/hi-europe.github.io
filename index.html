@@ -3,80 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundraising Report</title>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Fundraising Report</h1>
-            <p class="date">As of <time datetime="2023-06-16">June 16, 2023</time></p>
-        </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <main>
-            <section class="key-metrics">
-                <h2>Key Metrics</h2>
-                <div class="metrics-grid">
-                    <div class="metric-card">
-                        <h3>Total Raised</h3>
-                        <p class="metric-value">$150,000</p>
-                    </div>
-                    <div class="metric-card">
-                        <h3>Number of Donors</h3>
-                        <p class="metric-value">1,234</p>
-                    </div>
-                    <div class="metric-card">
-                        <h3>Average Donation</h3>
-                        <p class="metric-value">$121.56</p>
-                    </div>
-                </div>
-            </section>
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to Our Product</h1>
+        <p>Your journey to excellence starts here!</p>
+        <button onclick="alert('Call to Action!')">Get Started</button>
+    </section>
 
-            <section class="donation-sources">
-                <h2>Donation Sources</h2>
-                <div class="chart-placeholder">
-                    <!-- Placeholder for the actual chart -->
-                    <img src="/placeholder.svg?height=300&width=400" alt="Donation sources chart placeholder">
-                </div>
-            </section>
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature-card">
+            <h3>Feature One</h3>
+            <p>Awesome feature description goes here.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Feature Two</h3>
+            <p>Another great feature description.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Feature Three</h3>
+            <p>Yet another amazing feature.</p>
+        </div>
+    </section>
 
-            <section class="recent-donations">
-                <h2>Recent Donations</h2>
-                <ul class="donation-list">
-                    <li class="donation-item">
-                        <img src="/placeholder.svg?height=40&width=40" alt="Alice Johnson" class="donor-avatar">
-                        <div class="donation-details">
-                            <h3 class="donor-name">Alice Johnson</h3>
-                            <p class="donation-date">June 15, 2023</p>
-                        </div>
-                        <p class="donation-amount">$500</p>
-                    </li>
-                    <li class="donation-item">
-                        <img src="/placeholder.svg?height=40&width=40" alt="Bob Smith" class="donor-avatar">
-                        <div class="donation-details">
-                            <h3 class="donor-name">Bob Smith</h3>
-                            <p class="donation-date">June 14, 2023</p>
-                        </div>
-                        <p class="donation-amount">$1,000</p>
-                    </li>
-                    <li class="donation-item">
-                        <img src="/placeholder.svg?height=40&width=40" alt="Charlie Brown" class="donor-avatar">
-                        <div class="donation-details">
-                            <h3 class="donor-name">Charlie Brown</h3>
-                            <p class="donation-date">June 13, 2023</p>
-                        </div>
-                        <p class="donation-amount">$250</p>
-                    </li>
-                    <li class="donation-item">
-                        <img src="/placeholder.svg?height=40&width=40" alt="Diana Prince" class="donor-avatar">
-                        <div class="donation-details">
-                            <h3 class="donor-name">Diana Prince</h3>
-                            <p class="donation-date">June 12, 2023</p>
-                        </div>
-                        <p class="donation-amount">$750</p>
-                    </li>
-                </ul>
-            </section>
-        </main>
-    </div>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about delivering the best product.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Your Company Name</p>
+        <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
